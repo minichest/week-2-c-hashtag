@@ -14,7 +14,7 @@ namespace week_2
             Console.WriteLine($"Name: {author.Name}, age: {author.Age}");
 
             Person author2 = new Person("Natasha");
-            author2.Age = 22;
+            author2.Age = 23;
 
             Console.WriteLine($"Name: {author2.Name}, age: {author2.Age}");
         }
