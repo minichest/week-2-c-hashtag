@@ -26,12 +26,17 @@ namespace week_2
             Book[] books = new Book[3];
 
             books[0] = new Book(new Person("Herman Melville"), "Moby Dick");
+            books[0].Author.Age = 72;
+
             books[1] = new Horror("The Shining");
+            books[1].Author.Age = 79;
+
             books[2] = new Book(new Person("James Joyce"), "Ulysses");
+            books[2].Author.Age = 58;
 
             foreach (Book book in books)
             {
-                Console.WriteLine("{0} wrote {1}", book.Author.Name, book.Title);
+                Console.WriteLine(book.getSummary());
             }
 
         }

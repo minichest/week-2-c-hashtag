@@ -41,7 +41,10 @@ namespace week_2
             return Title.CompareTo(other.Title);
         }
 
-        
-    }
+        public string getSummary()
+        {
+            return "" + Title + " was made by " + Author.Name + " and the author is " + Author.Age +  " years old. ";
+        }
 
+    }
 }
